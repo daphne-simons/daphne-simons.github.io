@@ -1,0 +1,17 @@
+
+h1 {
+  font-family: Josefin Sans, Lucida Sans;
+}
+
+h2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  color: purple;
+}
+
+p { 
+  font-size: 80;
+  border: solid;
+}
