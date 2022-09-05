@@ -32,4 +32,14 @@ img {
    }
 }
 
-@media (min-width: )
+.small-image {
+  width: 200px;
+}
+
+.medium-image {
+  width: 500px;
+}
+
+.large-image {
+  width: 1000px; 
+}
