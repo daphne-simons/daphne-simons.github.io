@@ -19,6 +19,7 @@ h3 {
 p { 
   font-size: 1rem;
   border: solid;
+  padding: 1rem;
   font-family:'Courier New', Courier, monospace;
 }
 
