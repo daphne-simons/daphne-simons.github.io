@@ -1,8 +1,7 @@
-<!-- General styyyle rules --> 
+/* General styyyle rules */ 
 
 img { 
-  width: auto;
-  height: auto;
+  min-width: 100%;
 }
 
 
@@ -31,6 +30,14 @@ h3 {
   border-radius: 50%;
 }
 
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: blue; 
+  border: 2px solid black; 
+  padding: 2rem;
+}
+
 .center {
   text-align: center;
 }
@@ -50,7 +57,7 @@ ul {
 }
 
 div {
-  border: 10px solid yellowgreen; 
+  border: 10px solid lightskyblue; 
 }
 
 span {
@@ -59,32 +66,45 @@ span {
   color: mediumslateblue;
 }
 
-<!-- Styling for Phone 320px wide -->
-
-      @media (max-width: 320px) {
-        p {font-size: 1.0rem;
+/* Styling for Phone 320px wide */
+      @media (min-width: 150px) {
+        p {font-size: 0.6rem;
         }
         }
 
       @media (min-width: 320px) {
+        p {font-size: 1rem;
+        }
+        }
+
+      @media (min-width: 150px) {
         .small-image {width: 100px;
         }
       }
         
-      @media (min-width: 320px) {
-        .medium-image {width: 200px;
+      @media (min-width: 150px) {
+        .medium-image {width: 100px;
         }
       }
         
-      @media (min-width: 320px) {
+      @media (min-width: 150px) {
         .large-image {width: 320px; 
         }
       } 
 
-<!-- Styling for Tablet --> 
+      @media (min-width: 150px) {
+        span {font-size: 1.5rem;
+        }
+      } 
+      @media (min-width: 320px) {
+        span {font-size: 2rem;
+        }
+      } 
 
-      @media (max-width: 768px) {
-        p {font-size: 1.5rem;
+/* Styling for Tablet */
+
+      @media (min-width: 768px) {
+        p {font-size: 1.8rem;
         }
         }
 
@@ -101,9 +121,14 @@ span {
         }
       } 
 
-<!-- Styling for Desktop --> 
+      @media (min-width: 768px) {
+        span {font-size: 4rem;
+        }
+      } 
 
-      @media (max-width: 1200px) {
+/* Styling for Desktop */  
+
+      @media (min-width: 1200px) {
         p {font-size: 3rem;
         }
       }
@@ -121,3 +146,7 @@ span {
         }
       } 
 
+      @media (min-width: 1200px) {
+        span {font-size: 6rem;
+        }
+      } 
