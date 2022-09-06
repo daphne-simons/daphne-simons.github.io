@@ -1,3 +1,10 @@
+<!-- General styyyle rules --> 
+
+img { 
+  width: auto;
+  height: auto;
+}
+
 
 body {
   margin: 2rem;
@@ -5,42 +12,112 @@ body {
 }
 
 h1 {
-  font-family: Josefin Sans, Lucida Sans;
+  font-family: 'Antonio', sans-serif;
+  font-size: 6rem;
 }
 
 h2 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Josefin Sans', sans-serif;
+  font-size: 3rem;
 }
 
 h3 {
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 6rem;
   color: purple;
-}
-
-p { 
-  font-size: 1rem;
+  padding: 1em;
   border: solid;
-  padding: 1rem;
+  border-color: mediumturquoise;
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-w-border {
+  text-align: center;
+  border: 3px solid red;
+}
+
+li {
   font-family:'Courier New', Courier, monospace;
+  font-size: 1rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+ul {
+  list-style:circle;
 }
 
-@media (min-width: 600px) {
-  p {font-size: 1.5rem;
-   }
+div {
+  border: 10px solid yellowgreen; 
 }
 
-.small-image {
-  width: 200px;
+span {
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 4rem;
+  color: mediumslateblue;
 }
 
-.medium-image {
-  width: 500px;
-}
+<!-- Styling for Phone 320px wide -->
 
-.large-image {
-  width: 1000px; 
-}
+      @media (max-width: 320px) {
+        p {font-size: 1.0rem;
+        }
+        }
+
+      @media (min-width: 320px) {
+        .small-image {width: 100px;
+        }
+      }
+        
+      @media (min-width: 320px) {
+        .medium-image {width: 200px;
+        }
+      }
+        
+      @media (min-width: 320px) {
+        .large-image {width: 320px; 
+        }
+      } 
+
+<!-- Styling for Tablet --> 
+
+      @media (max-width: 768px) {
+        p {font-size: 1.5rem;
+        }
+        }
+
+      @media (min-width: 768px) { 
+        .small-image {width: 200px;
+          }
+      }
+      @media (min-width: 768px) {
+        .medium-image {width: 400px;
+        }
+      }
+      @media (min-width: 768px) {
+        .large-image {width: 768px; 
+        }
+      } 
+
+<!-- Styling for Desktop --> 
+
+      @media (max-width: 1200px) {
+        p {font-size: 3rem;
+        }
+      }
+
+      @media (min-width: 1200px) { 
+        .small-image {width: 300px;
+          }
+      }
+      @media (min-width: 1200px) {
+        .medium-image {width: 600px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .large-image {width: 1200px; 
+        }
+      } 
+
