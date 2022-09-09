@@ -8,52 +8,50 @@ header {
   background-color: azure;
   padding: 2rem;
   }
+
+
   
 /* FLEX BOX Navigation menu rules*/ 
 
 .nav-list {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 } 
 
 .nav-list li {
-  flex-grow: 1;
+  flex: 1 1 33%;
   flex-shrink: 1;
+
+}
+.card {
+  padding: 1rem;
+  border: solid 5px green;
 }
 
 *//*Columns Trial 3 - FLEXBOX*/
 
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.columns > * {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex: 1;
-}
-  
   ------------------
 p { margin-top: 0; }
 
 ul { margin-top: 0; 
     padding: 1rem;
     margin: 1rem;
+    
 }
 
 li {
   text-align: center;
-  border: solid 2px
+  
 }
 
 ---------------------
 
-/* Image GRID trial*/
+/* Image GRID trial
 
 .image-grid { 
   --gap: 10px;
@@ -74,17 +72,11 @@ li {
   width: 100%;
   height: auto;
 }
-
-  img { 
-  min-width: 100%;
-}
-
-?*IMAGE - FLEX BOX TRIAL
+*/
 
 
 
-
-
+/*General Styling*/
 
 body {
   margin: 2rem;
@@ -103,13 +95,14 @@ h2 {
 }
 
 h3 {
-  font-family: 'Bigelow Rules', cursive;
-  font-size: 6rem;
+  /* font-family: 'Bigelow Rules', cursive; */
+  font-size: 4rem;
   color: purple;
   padding: 1em;
   border: solid;
   border-color: mediumturquoise;
   border-radius: 50%;
+  width: 100%;
 }
 
 p {
@@ -131,16 +124,20 @@ p {
 
 li {
   font-family:'Courier New', Courier, monospace;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  padding: 5px;
 }
 
 ul {
-  list-style:circle;
+  list-style:none;
+  
 }
 
-div {
+/*div {
   border: 10px solid lightskyblue; 
-}
+}*/
 
 span {
   font-family: 'Bigelow Rules', cursive;
@@ -162,13 +159,15 @@ span {
         }
         }
 
+    /* images */
       @media (min-width: 150px) {
         .small-image {width: 100px;
         }
       }
         
       @media (min-width: 150px) {
-        .medium-image {width: 100px;
+        .medium-image {
+          min-width: 100%;
         }
       }
         
@@ -180,7 +179,7 @@ span {
       @media (min-width: 150px) {
         span {font-size: 1rem;
         }
-      } 
+      } */ 
       @media (min-width: 320px) {
         span {font-size: 1.5rem;
         }
@@ -192,20 +191,21 @@ span {
         p {font-size: 1.8rem;
         }
         }
-
+        /* images*/ 
       @media (min-width: 768px) { 
         .small-image {width: 200px;
           }
       }
       @media (min-width: 768px) {
-        .medium-image {width: 400px;
+        .medium-image {
+          min-width:50%;
         }
       }
       @media (min-width: 768px) {
         .large-image {width: 768px; 
         }
       } 
-
+*/
       @media (min-width: 768px) {
         span {font-size: 2rem;
         }
@@ -218,20 +218,107 @@ span {
         }
       }
 
+      @media (min-width: 1200px) {
+        span {font-size: 4rem;
+        }
+      } 
+         /* images*/ 
       @media (min-width: 1200px) { 
-        .small-image {width: 300px;
+        .small-image {
+          width: 33%;
+          height: auto;
           }
       }
-      @media (min-width: 1200px) {
-        .medium-image {width: 600px;
+      @media (min-width: 1024px) {
+        .medium-image {
+          max-width: 33%; 
         }
       }
       @media (min-width: 1200px) {
         .large-image {width: 1200px; 
         }
       } 
+*/
+  
 
-      @media (min-width: 1200px) {
-        span {font-size: 4rem;
-        }
-      } 
+/* IMAGE - FLEX BOX TRIAL
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.container > * {
+  width: 100%;
+
+}
+
+img {
+  padding: 5px;
+  max-width: 400px;
+} */
+
+/* NEW FLEX-BOX TRIALS */
+
+img {
+
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media(min-width:320px){
+.container-2 {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+}
+
+.container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+
+}
+
+header {
+  min-width: 100%;}
+
+.container-1-box {
+  flex-basis: 1;
+}
+
+.container-2-box {
+  flex-basis: 10%;
+}
+
+.container-4-box {;
+}
+
+.shrink {
+  font-size: 5rem;
+}
+
+.big-bright-font {
+  font-size: 5rem;
+  color: rgb(34, 174, 255);
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
+}
+
+@media(max-width:880) {
+  .shrink {
+    font-size: 3rem;
+  }
+}
+
+
