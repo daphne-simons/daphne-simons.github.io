@@ -64,8 +64,8 @@ p {
 }
 
 li {
-  font-family:'Antonio', sans-serif;
-  font-size: 1.4rem;
+  font-family:'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
   margin: 0;
   text-align: center;
   padding: 5px;
@@ -169,71 +169,153 @@ header {
 /* IMAGE MEDIA QUERIES */
 
 @media(min-width:320px) {
-  .container-4-box {
-    max-width: 100%;
-    object-fit: cover; 
-}
-img {
-  width: 300px;
-}
-.big-bright-font {
-  font-size: 2.5rem;
-  text-align: center;
-}
-h1 {
-  font-size: 4rem;
-  justify-content: center;
-}
-h2 {
-  font-size: 1.5rem;
-  justify-content: center;
-}
-}
+        .container-4-box {
+          max-width: 100%;
+          object-fit: cover; 
+      }
+      img {
+        width: 400px;
+      }
+      .big-bright-font {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 4rem;
+        align-self: left;
+      }
+      h2 {
+        font-size: 1.5rem;
+        justify-content: center;
+      }
+      li {
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 1.3rem;
+      }
+
+      .container-2 {
+        flex-direction: column;
+      }
+      }
+
+ @media(min-width:680px) {
+        img {
+          width: 300px;
+        }
+        .container-4-box {
+          max-width: 50%;
+          object-fit: cover; 
+      }
+        li {
+          font-family:'Josefin Sans', sans-serif;
+          font-size: 1.5rem;
+        }
+        .container-2 {
+          flex-direction: row;
+        }
+        }
+      }
 
 @media(min-width:768px) {
+            .container-4-box {
+              max-width: 50%;
+                object-fit: cover; 
+            }
+            img {
+              max-width: 380px;
+            }
+            .big-bright-font {
+              font-size: 3.5rem;
+              text-align: center;
+            }
+            h1 {
+              font-size: 5rem;
+              justify-content: center;
+            }
+            h2 {
+              font-size: 2rem;
+              justify-content: center;
+            }
+            li {
+              font-family:'Josefin Sans', sans-serif;
+              font-size: 1.6rem;
+            }
+          }
+
+          @media(min-width: 800px) {
+            img {
+              width: 300px;
+            }
+          }
+
+ @media(min-width:960px) {
   .container-4-box {
     max-width: 50%;
-    object-fit: cover; 
-}
-img {
-  width: 300px;
-}
-.big-bright-font {
-  font-size: 3.5rem;
-  text-align: center;
-}
-h1 {
-  font-size: 5rem;
-  justify-content: center;
-}
-h2 {
-  font-size: 2rem;
-  justify-content: center;
-}
-}
-
+      object-fit: cover; 
+  }
+ img {
+              min-width: 350px;
+            
+          }
+        }
 
 @media(min-width:1024px) {
-  .container-4-box {
-    max-width: 50%
-    object-fit: cover; 
-}
-img {
-  width: 400px;
-}
-.big-bright-font {
-  font-size: 6rem;
-  text-align: center;
-}
-h1 {
-  font-size: 6rem;
-  justify-content: center;
-}
-h2 {
-  font-size: 3rem;
-  justify-content: center;
-}
-}
+          .container-4-box {
+            max-width: 50%;
+              object-fit: cover; 
+          }
+          img {
+            min-width: 400px;
+          }
+          .big-bright-font {
+            font-size: 6rem;
+            text-align: center;
+          }
+          h1 {
+            font-size: 6rem;
+            justify-content: center;
+          }
+          h2 {
+            font-size: 3rem;
+            justify-content: center;
+          }
+          li {
+            font-family:'Josefin Sans', sans-serif;
+            font-size: 1.8rem;
+          }
+          }
+
+@media(min-width:1179px) {
+            img {
+              min-width: 550px;
+            }
+          }
+@media(min-width:1440px) {
+
+            img {
+              min-width: 600px;
+            }
+         
+            .big-bright-font {
+              font-size: 6rem;
+              text-align: center;
+            }
+            h1 {
+              font-size: 6rem;
+              justify-content: center;
+            }
+            h2 {
+              font-size: 3rem;
+              justify-content: center;
+            }
+            li {
+              font-family:'Josefin Sans', sans-serif;
+              font-size: 2rem;
+            }
+            }
+
+
+
 
 h3 { 
   font-family: 'gilbert-color',sans-serif;
@@ -368,4 +450,17 @@ color:black;
   h3 {
     font-size: 3rem;
   }
+}
+
+#home-button {
+  
+    font-family: 'Bigelow Rules', cursive;
+    font-size: 6rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 140);
+
+}
+
+a {
+  color: red;
 }
