@@ -10,29 +10,6 @@ header {
   }
 
 
-  
-/* FLEX BOX Navigation menu rules*/ 
-
-.nav-list {
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  align-items: center;
-} 
-
-.nav-list li {
-  flex: 1 1 33%;
-  flex-shrink: 1;
-
-}
-.card {
-  padding: 1rem;
-  border: solid 5px green;
-}
-
 *//*Columns Trial 3 - FLEXBOX*/
 
   ------------------
@@ -48,32 +25,6 @@ li {
   text-align: center;
   
 }
-
----------------------
-
-/* Image GRID trial
-
-.image-grid { 
-  --gap: 10px;
-  --num-cols: 3;
-  --row-height:320px;
-
-  box-sizing: border-box;
-  padding: var(--gap);
-
-  display: grid;
-  grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
-  gap: var(--gap);
-
-}
-
-.image-grid > img {
-  width: 100%;
-  height: auto;
-}
-*/
-
 
 
 /*General Styling*/
@@ -135,141 +86,43 @@ ul {
   
 }
 
-/*div {
-  border: 10px solid lightskyblue; 
-}*/
-
 span {
   font-family: 'Bigelow Rules', cursive;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: mediumslateblue;
-  
 }
+
 
 
 
 /* Styling for Phone 320px wide */
       @media (min-width: 150px) {
-        p {font-size: 0.6rem;
+        p {font-size: 0.6rem; }
         }
-        }
-
       @media (min-width: 320px) {
-        p {font-size: 1rem;
+        p {font-size: 1rem;}
         }
-        }
-
-    /* images */
-      @media (min-width: 150px) {
-        .small-image {width: 100px;
-        }
-      }
-        
-      @media (min-width: 150px) {
-        .medium-image {
-          min-width: 100%;
-        }
-      }
-        
-      @media (min-width: 150px) {
-        .large-image {width: 320px; 
-        }
-      } 
-
-      @media (min-width: 150px) {
-        span {font-size: 1rem;
-        }
-      } */ 
-      @media (min-width: 320px) {
-        span {font-size: 1.5rem;
-        }
-      } 
 
 /* Styling for Tablet */
 
       @media (min-width: 768px) {
-        p {font-size: 1.8rem;
+        p {font-size: 1.8rem;}
         }
-        }
-        /* images*/ 
-      @media (min-width: 768px) { 
-        .small-image {width: 200px;
-          }
-      }
-      @media (min-width: 768px) {
-        .medium-image {
-          min-width:50%;
-        }
-      }
-      @media (min-width: 768px) {
-        .large-image {width: 768px; 
-        }
-      } 
-*/
-      @media (min-width: 768px) {
-        span {font-size: 2rem;
-        }
-      } 
 
 /* Styling for Desktop */  
 
       @media (min-width: 1200px) {
-        p {font-size: 3rem;
-        }
+        p {font-size: 3rem;}
       }
 
-      @media (min-width: 1200px) {
-        span {font-size: 4rem;
-        }
-      } 
-         /* images*/ 
-      @media (min-width: 1200px) { 
-        .small-image {
-          width: 33%;
-          height: auto;
-          }
-      }
-      @media (min-width: 1024px) {
-        .medium-image {
-          max-width: 33%; 
-        }
-      }
-      @media (min-width: 1200px) {
-        .large-image {width: 1200px; 
-        }
-      } 
-*/
-  
 
-/* IMAGE - FLEX BOX TRIAL
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-.container > * {
-  width: 100%;
-
-}
-
-img {
-  padding: 5px;
-  max-width: 400px;
-} */
-
-/* NEW FLEX-BOX TRIALS */
-
-img {
-
-}
+/* FLEX-BOX STYLING*/ 
 
 .container-1 {
   display: flex;
   justify-content: center;
   align-content: center;
+  gap: 100px;
 }
 
 @media(min-width:320px){
@@ -282,15 +135,19 @@ img {
 }
 }
 
-.container-4 {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end;
-
+img {
+  width: 200px;
 }
 
-header {
-  min-width: 100%;}
+.container-4 {
+ display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1em;
+  justify-content: center;
+  object-fit: cover;
+}
+
 
 .container-1-box {
   flex-basis: 1;
@@ -300,25 +157,107 @@ header {
   flex-basis: 10%;
 }
 
-.container-4-box {;
-}
+header {
+  min-width: 100%;}
 
-.shrink {
-  font-size: 5rem;
-}
-
+  h4 {
+    font-family: 'Bigelow Rules', cursive;
+    font-size: 5rem;
+    color: rgb(34, 174, 255);
+  }
 .big-bright-font {
-  font-size: 5rem;
-  color: rgb(34, 174, 255);
-  text-align: center;
-  padding: 5%;
-  margin: 5%;
+    font-size: 5rem;
+    color: rgb(34, 174, 255);
+    padding: 1%;
+    margin: 1%;}
+
+.container-3 {
+  display: flex;
+  justify-content: center;
 }
 
-@media(max-width:880) {
-  .shrink {
+/*
+@media(max-width:800px) {
+  .big-bright-font {
+    font-size: 4.5rem;
+  }
+}
+
+@media(min-width:600px) {
+  .big-bright-font {
     font-size: 3rem;
   }
+}
+
+@media(min-width:320px){
+   .big-bright-font {
+    font-size: 1.7rem;
+  }
+}
+
+@media(max-width:150px) {
+   .big-bright-font {
+    font-size: 0.7rem;
+  }
+} */
+
+/* Image media queries*/ 
+/* 
+@media(max-width:150px) {
+  .container-4-box {
+    width: 50%;}
+}
+
+@media(max-width:320px){
+  .container-4-box {
+    width: 50%;
+  }
+}
+
+@media(max-width:375px){
+  .container-4-box {
+    width: 50%;
+  }
+}
+
+@media(max-width:425px){
+  .medium-image{
+    width: 50%;
+  }
+}
+
+@media(min-width:768px) {
+  .container-4-box {
+    width: 50%}
+}
+*/
+
+@media(min-width:320px) {
+  .container-4-box {
+    max-width: 100%;
+    object-fit: cover; 
+}
+}
+
+@media(min-width:768px) {
+  .container-4-box {
+    max-width: 50%;
+    object-fit: cover; 
+}
+}
+
+@media(min-width:800px) {
+  .container-4-box {
+    max-width: 50%;
+    object-fit: cover; 
+}
+}
+
+@media(min-width:1024px) {
+  .container-4-box {
+    max-width: 33%;
+    object-fit: cover; 
+}
 }
 
 
