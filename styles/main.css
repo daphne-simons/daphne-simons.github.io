@@ -647,3 +647,29 @@ width: 100%;
   font-size: 3rem;
   text-align: center;
 }
+
+
+
+.li-blog-3 {
+  font-size: 1.3rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color:black;
+  width: 75%;
+  text-align: left;
+  list-style: none;
+  padding: 5px;
+  margin: 20px;
+}
+.ol-blog-3 {
+  font-family:'gilbert', sans-serif;
+  font-size: 2rem;
+  max-width: 75%;
+  list-style: number;
+}
+
+.cheesy-end-comment {
+  font-family: 'gilbert color', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+
+}
