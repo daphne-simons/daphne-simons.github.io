@@ -4,7 +4,7 @@
 /* Structuring */
 
 header {
-  min-width: 100%;
+  min-width: 50%;
   background-color: azure;
   padding: 2rem;
   }
@@ -37,7 +37,9 @@ body {
 h1 {
   font-family: 'gilbert-color', sans-serif;
   font-size: 6rem;
-  width: 100%;
+  width: 75%;
+  text-align: center;
+
 }
 
 h2 {
@@ -148,7 +150,7 @@ img {
 }
 
 header {
-  min-width: 100%;}
+  min-width: 50%;}
 
   h4 {
     font-family: 'Bigelow Rules', cursive;
@@ -181,12 +183,12 @@ header {
         text-align: center;
       }
       h1 {
-        font-size: 4rem;
-        align-self: left;
+        font-size: 3rem;
+        padding: 0, 1em, 0 1em;
       }
       h2 {
         font-size: 1.5rem;
-        justify-content: center;
+        text-align: center;
       }
       li {
         font-family:'Josefin Sans', sans-serif;
@@ -213,8 +215,12 @@ header {
         .container-2 {
           flex-direction: row;
         }
+
+        h1 {
+          font-size: 3.5rem;
         }
-      }
+        }
+      
 
 @media(min-width:768px) {
             .container-4-box {
@@ -455,11 +461,12 @@ color:black;
 #home-button {
   
     font-family: 'Bigelow Rules', cursive;
-    font-size: 6rem;
+    font-size: 5rem;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 10px rgb(255, 0, 140);
-
 }
+
+
 
 a {
   color: red;
@@ -492,6 +499,8 @@ a {
   font-family: 'gilbert-color', sans-serif;
   color: indigo;
   text-align: center;
+  font-size: 3rem;
+  padding:   0 0.8em 0 0.8em;
 }
 
 .h2-blog1 {
@@ -549,3 +558,21 @@ width: 100%;
   color: red;
 
 }
+
+.image-width-50 {
+  width: 50%;
+  }
+
+  .inline-block-50 
+  { display: inline-block;
+    text-align: left;
+    padding:   0 0.8em 0 0.8em;
+
+  }
+
+  .active-nostyle {
+    list-style: none;
+    display: inline-block;
+    padding: 0 3.8em 0 0em;
+    align-self: left;
+  }
