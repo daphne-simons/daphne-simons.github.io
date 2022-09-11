@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML - CSS </title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+
+  </head>     
+    
+  <body> 
+
+     <h2 class="h1-blog1"> Block, inline, and inline-block: </h2>
+
+<div class="border-1"> 
+
+      <ul class="h2-blog1"> BLOCK Elements - Key Points</ul>
+          <li class="li-blog1"> Block level elements always stack on top of eachother, even if they have room to go next to eachother, they will start on a new line underneath.</li>
+          <li class="li-blog1">Their default width is 100%, see Fig. 1:</li>
+          <p class="fig-text">Fig. 1</p>
+   
+          <img class="image-width" src="html-css-images/1.png" alt="screenshot of block display 100%"> 
+       
+
+          <li class="li-blog1">Even if you change their width to 33%, or 25%, they still won't sit next to eachother, they'll always stack. See fig. 2:</li>
+          <p class="fig-text">Fig. 2</p>
+          <img class="image-width" src="html-css-images/2.png" alt="screenshot of block display 50%"> 
+    </div>
+    <br>
+    <br>
+
+    <div class="border-2"> 
+  <ul class="h2-blog1"> IN-LINE Elements - Key Points</ul>
+    <li class="li-blog1">Inline elements always sit within the block element they are in. They won't start a new line. See fig. 3 & fig. 4:</li>
+    <p class="fig-text">Fig. 3</p>
+    <img class="image-width-50" src="html-css-images/5.png" alt="screenshot of inline element-code"> 
+    <p class="fig-text">Fig. 4</p>
+    <img class="image-width" src="html-css-images/4.png" alt="screenshot of inline element"> 
+   
+    <li class="li-blog1">You <strong>cannot </strong>change the height of the inline element, because it throws the rest of the block dimensions off. </li>
+    <li class="li-blog1">But you <strong>can</strong> alter the font-size of the inline text, so it can be bigger, but it makes the surrounding inline content adjust the spacing to fit that new size. 
+        See fig. 5 & fig. 6:  </li>
+        <p class="fig-text">Fig. 5</p>
+        <img class="image-width-50" src="html-css-images/6a.png" alt="screenshot of inline element- css code to change font size"> 
+        <p class="fig-text">Fig. 6</p>
+        <img class="image-width" src="html-css-images/6b.png" alt="screenshot of inline element- css code to change font size"> 
+    
+      </div>
+
+      <br>
+      <br>
+  <div class="border-3"> 
+  <ul class="h2-blog1"> IN-LINE BLOCK Element - Key Points</ul>
+      <li class="li-blog1"> Inline-block allows you to set the height (top and bottom padding/margin) just like a block element, but they will <strong>also</strong> have the ability to sit next to eachother like an in-line element. </li>
+     
+      <li class="li-blog1"> As we learnt with inline elements before, you cannot control the height or position of inline elements. As you can see with the button example of fig.7: </li>
+    
+      <p class="fig-text">Fig. 7</p>
+      <img class="image-width-50" src="html-css-images/9.png" alt="screenshot of inline element- css code to change font size"> 
+    <br>
+    <br>
+    <br>
+      <li class="li-blog1"> But with "Inline-Block" you change your CSS to make it <strong>display: inline-block;</strong> which means you will be able to set the height and control it like a block element. See fig. 8 & fig. 9:</li>
+      <p class="fig-text">Fig. 8: </p>
+      <img class="image-width-50" src="html-css-images/10.png" alt="screenshot of inline element- css code to change font size"> 
+      <p class="fig-text">Fig. 9: </p>
+      <img class="image-width" src="html-css-images/11.png" alt="screenshot of inline element- css code to change font size"> 
+    
+
+      <li class="li-blog1"> Now you're probably wondering, "well why not just make it a <strong>display: block;</strong> then? Because if you do that, the button will stretch default into a 100% width like a block, which you might not want for your buttons.... see Fig. 10: </li>
+     
+      <p class="fig-text">Figure 10: </p>
+      <img class="image-width" src="html-css-images/13.png" alt="screenshot of inline element- css code to change font size"> 
+    
+      <li class="li-blog1">The inline-block display feature is really handy if you want multiple links/ buttons in a row next to eachother. See fig. 11 & fig. 12 below:</li>
+      <p class="fig-text">Fig. 11</p>
+      <img class="image-width-50" src="html-css-images/14.png" alt="screenshot of inline element- css code to change font size"> 
+    
+      <p class="fig-text">Fig. 12</p>
+      <img class="image-width" src="html-css-images/15.png" alt="screenshot of inline element- css code to change font size"> 
+    
+
+       </div>
+
+            
+<!-- <p> Lorem ipsum dolor <a class=a-blog1 href="https://www.daphnesimons.com">my artist website</a> sit amet consectetur, adipisicing elit. Accusantium aliquam quos vel aut laudantium sequi eaque illo error vitae iure cupiditate consequuntur tempora placeat, odio nisi cumque vero cum soluta veritatis quae. Voluptatem eligendi quo quaerat possimus perferendis expedita fugiat necessitatibus, harum aperiam provident, unde, iusto consequatur cupiditate molestiae dignissimos. </p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolor quis odit dolores temporibus, ut dignissimos non vel mollitia asperiores, vitae eum et nobis facere vero hic! Iusto excepturi hic sint dolore. Quis enim, nisi sequi est amet aut ipsam quod? Deserunt facilis assumenda, similique minima nemo harum, praesentium dolorem aut eum dolores earum nisi?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta id ab incidunt quo distinctio at quam natus reiciendis quaerat possimus, doloremque et corporis laudantium fuga itaque recusandae, reprehenderit in ipsam maxime modi architecto quibusdam? Mollitia dolores fugit ea velit molestiae nesciunt reprehenderit cumque ipsa sint!</p>
+<a href="#" class="btn">I'm a link/button</a>
+<a href="#" class="btn">I'm a link/button 2</a>   
+<a href="#" class="btn">I'm a link/button 3</a> 
+ -->
+
+
+
+  </body>
+
+</html>
