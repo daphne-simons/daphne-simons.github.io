@@ -47,6 +47,10 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  padding: 1em;
+  text-align: center;
+}
 
 p {
   font-family: 'Josefin Sans', sans-serif;
@@ -130,7 +134,7 @@ span {
           }
           }
 
-img {
+          .img-index {
   width: 200px;
 }
 
@@ -178,7 +182,7 @@ header {
           max-width: 100%;
           object-fit: cover; 
       }
-      img {
+      .img-index {
         width: 400px;
       }
       .big-bright-font {
@@ -205,7 +209,7 @@ header {
       }
 
  @media(min-width:680px) {
-        img {
+        .img-index {
           width: 300px;
         }
         .container-4-box {
@@ -231,7 +235,7 @@ header {
               max-width: 50%;
                 object-fit: cover; 
             }
-            img {
+            .img-index {
               max-width: 380px;
             }
             .big-bright-font {
@@ -253,7 +257,7 @@ header {
           }
 
   @media(min-width: 800px) {
-            img {
+          .img-index {
               width: 300px;
             }
           }
@@ -263,7 +267,7 @@ header {
               max-width: 50%;
                 object-fit: cover; 
             }
-            img {
+            .img-index {
               min-width: 350px;
             
                 }
@@ -274,7 +278,7 @@ header {
             max-width: 50%;
               object-fit: cover; 
           }
-          img {
+          .img-index {
             min-width: 400px;
           }
           .big-bright-font {
@@ -296,13 +300,13 @@ header {
           }
 
 @media(min-width:1179px) {
-            img {
+          .img-index {
               min-width: 550px;
             }
           }
 @media(min-width:1440px) {
 
-            img {
+            .img-index {
               min-width: 600px;
             }
          
@@ -335,7 +339,7 @@ header {
         color:black;
         }
 
-/* Containers:  */
+/* COLOURED WORDS ON INDEX  */
                 .container-5 {
                   display: flex;
                   justify-content: space-around;
@@ -672,4 +676,31 @@ width: 100%;
   font-size: 3rem;
   text-align: center;
 
+}
+
+/* // JS FUNDAMENTALS BLOG //  */
+
+#christmasCarol {
+  font-family: 'gilbert-color', sans-serif;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 10px rgb(0, 160, 16);
+  font-size: 4rem;
+  padding: 0, 0, 0, 0em;
+} 
+
+#santaImage {
+  display: flex;
+  width: 100%;
+  justify-content:center;
+}
+
+.p-text {
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#smallDiagram {
+  width: 75%;
 }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Fundamentals</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+      <!-- fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Bigelow+Rules&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/siq7ijr.css">
+      <!-- fonts from google --> 
+  </head>     
+    
+<body> 
+
+  <div class="flex-wrap"> 
+        <a class="inline-block-50"href="../#home"><span id="home-button">Home</span></a>
+        <h1><li class="active-nostyle center"></li>JS Fundamentals</h1> 
+      </div>
+
+      <div class="border-1"> 
+
+       <h2 id="christmasCarol">A Christmas Carol</h2>
+        <h3>Starring: Javascript, CSS and HTML</h3>
+        <img id="santaImage" src="../blog-images/Santa JAvascript.jpg" alt="Santa claus sits in front of a fire with a finger in front of his mouth, theres a speechbubbles that says: Shhhhhh, no-one know i'm actually javascript...">
+  </div>
+        <br>
+        <br>
+
+  <div class="border-2"> 
+        <ul class="h2-blog1">Santa?</ul>
+          <p class="p-text">Javascript is like Santa Claus. This analogy sounds far-fetched I know, but it will make more 
+            sense as we go. 
+            <br>
+            <br>
+            Let’s say a website is like a house at night time. Everybody has gone to bed, and everything inside the house just sits there motionless. 
+            <br>
+            <br>
+            HTML is what defines the structure/ layout of the house, it names the objects that go inside the house, 
+            and also organises what rooms they exist in.  
+            <br>
+            e.g. The fireplace in the living room, 
+            the table and chairs in the dining room, 
+            the fridge in the kitchen. 
+            <br>
+            <br>
+            CSS is what determines the way these objects look, their “style”. 
+            <br>
+            e.g. The fireplace has an exposed brick façade, the table is wooden and the chairs are also 
+            wooden but with green fluffy cushions.  
+            <br>
+            <br>
+            Javascript is like Santa Claus, in that he has the magical ability to enter a house (the website) 
+            and modify the stuff inside.
+            </p>
+   </div>
+
+  <div class="border-3"> 
+        <img id="santaImage" src="../blog-images/santa-flying.jpg" alt="An open window, night scene, the moon is big, and you can see a flying sleigh and reindeer. It's christmas.">
+        <p class="p-text">To expand on this simile, lets say Santa (javascript) is flying past a house (a website). 
+          He pauses his flying reindeer outside the window so that he can take a wee look at all the things inside the house. 
+          <br><br> What Java-Santa is doing right now is using the <span>DOM</span>. 
+          <br>
+          <br> 
+          <p class="fig-text">Fig. 1</p>
+          <img id="smallDiagram" src="../blog-images/dom-diagram.png" alt="Diagram of a DOM model, colourful boxes with words in them."> 
+            <br>
+          <p class="p-text">DOM (known officially as the Document Object Model is just like santa’s perspective of looking into the house through the windows. 
+            <br><br> The DOM turns all the contents (HTML& CSS) of the website into Object representations (the colourful boxes in Fig.1). 
+            <br> <br> Instead of head, div, title, body, Santa can see a wall, a chair, a couch, carpet, etc. 
+            <br> <br> With Javascript, we can be Santa and use the DOM to look at all the objects in the website like that, the html elements all become objects that we can access and modify.  
+            <br> <br>
+            Santa can decide to enter the house using the fireplace and he can navigate through the different rooms of the house, and even interact with objects inside the room, changing their properties and values however he wants. 
+            <br><br> Yes, yes, I guess a thief could do this too, but Santa has a fairly well known set of behaviours when he 
+            enters a strangers home, so it’s a slightly less chaotic analogy. 
+    </div>
+
+    <div class="border-1"> 
+            <ul class="h2-blog1">Running with the Analogy!</ul>
+            <p class="p-text">Santa comes into the living room and sits on the couch for a bit, 
+              feeling the soft cushions supporting his red (and probably quite sore) but. 
+              <br> He realises that he’s a bit thirsty from his nightly travels 
+              and heads into the kitchen. <br> <br> Santa takes some milk out of the fridge and 
+              pours himself a refreshing drink. After Santa finishes his milk he goes back into the living room, 
+              counts the stockings, drops coal into some of them and gifts into the others. 
+              <br><br> After all of this (considered normal santa behaviour) 
+              he magically exits the house, and moves onto the next house where he has the ability 
+              to access and modify the contents of that house too. 
+            </p>
+           
+              <ul class="h2-blog1">Functions</ul>
+              <p class="p-text">Functions in Javascript are like instructions that Santa can leaves behind, 
+              which affect the way the house runs. 
+              For example,  Santa could be annoyed that the house didn’t leave him any cookies by the fireplace when he 
+              got there. So he leaves a note saying that next christmas night, he expects the people in the house 
+              to leave him a plate with 5 chocolate chip cookies and a glass of milk next to the fireplace. 
+              Functions are like that, they effect how the website runs, and are designed to be used more than once.</p>
+              <ul class="h2-blog1">Loops</ul>
+              <p class="p-text"> Loops in Javascript, repeat a function (instructions to do something) 
+                inside of a website for a set number of repetitions. In Santa’s case, a looped function 
+                he might need to perform at different houses is counting how many stockings there are on the mantle. 
+              <br><br> 
+                A javascript loop for Santa's stocking count could look like this: </p>
+              <img id="smallDiagram" src="../blog-images/func-loops.png" alt="code showing a function in a loop">
+
+              <ul class="h2-blog1">Conditionals</ul>
+              <p class="p-text"><span>Conditionals</span> in Javascript are the “if” statements that rely on the user interacting with the website. 
+                In the case of Santa, "if" the occupants of the house have been good, then he leaves gifts. 
+                Else, if they have been bad, he leaves them coal.
+                <br><br> 
+                A javascript conditional for Santa's moral quandry could look like this:
+              </p>
+              <img id="smallDiagram" src="../blog-images/func-conditionals.png" alt="code showing a javascript conditional example">
+
+              <ul class="h2-blog1">Control Flow</ul>
+              <p class="p-text">Both <span>Loops</span> and <span>Conditionals</span> are a way for Santa to control the flow of things in the 
+                house. They allow him to modify the order in which the house normally operates. 
+                <br>One example of this is Santa's “good and bad” conditional function, which would 
+                directly effects how the people in the house behave.  
+                <br><br>
+                One house might require a counting stockings loop, another house might require him to rearrange 
+                the furniture so he can move through the house better. 
+                <br> Just like each house is different, each 
+                website is different, and will need different loops and conditionals depending on how we want the 
+                website to function. <br>This is what Javascript allows us to do.  
+              </p>
+
+              <ul class="h2-blog1">Arrays and Objects</ul>
+
+              <p class="p-text">An <span>array</span> is a list or collection of things. 
+                <br>For example the fridge where Santa gets his glass of milk from could be written as the following array: </p>
+
+              <img id="smallDiagram" src="../blog-images/eg-array.png" alt="code showing an array of items in a fridge">
+
+              <p class="p-text">And an <span>object</span>could be the person asleep in their bed while Santa is roaming around 
+                downstairs. <br><br>As an object with particular properties in Javascript, you would describe this 
+                person with a set of key: value pairs, a key might be their name, and the value of that key might 
+                be 'Steve': </p>
+
+              <img id="smallDiagram" src="../blog-images/eg-object.png" alt="code showing an object called 'steve' with various properties">
+
+              <ul class="h2-blog1">Accessing Array Elements and Object Properties:</ul> 
+              <p class="p-text"> 
+                To access an element from an array, you have to assign a location to the item of the list using a “square bracket” like this []. 
+                In the case of Santa's beloved fridge (an array), we need to locate the milk (element). 
+                <br><br>
+                To count the items in an Array list we start from 0, not 1 like a standard count. 
+                <br><br>
+                So it would be: 
+                </p>
+                <img id="smallDiagram" src="../blog-images/array-count.png" alt="code of a fridge array with numbers above indicating the array list number of the elements.">
+                <p class="p-text"> Now if I were Santa, i'd go for a nice cold [4] after a long night of breaking 
+                  and entering, but because he wants to access the milk like the adult baby he is, he would use this 
+                  javascript code to access the milk at [1]:</p>
+                <img id="smallDiagram" src="../blog-images/array-index.png" alt="console.log looking for fridge item number 1">
+                <p class="p-text"> Alternatively, if he wanted to find the location of the milk in the fridge 
+                  (the location of the element in the array), he could use the following, which would give him the result of [1]: </p>
+                  <img id="smallDiagram" src="../blog-images/array-index2.png" alt="code that tries to locate the milk using indexOf method">
+
+                <p class="p-text">For accessing properties in objects, it’s a little different. 
+                A common way to access a property of an object is using the “dot property accessor”. 
+                <br><br>To find out if Mr. Steven Sondheim has been good or bad this year, Santa could make a variable called 
+                steveBehaviour which is defined by the properties in the Object, specifically the key value pair for 'behaviour'. 
+                <br><br></p>
+                <img id="smallDiagram" src="../blog-images/steve-behaviour.png" alt="function written to determine an object's key and value pair">
+                <p class="p-text">Santa could then request the results of Steve's behaviour in the console.log as below, which would result with 'Good': </p>
+                <img id="smallDiagram" src="../blog-images/steve-console.png" alt="requesting steveBehaviour in console.log">
+                <br> <br><br>  
+    </div>
+
+    <div class="border-3">  
+        <ul><h3 class="cheesy-end-comment">
+          Thanks for your help Java-Santa!</h3></ul>
+        <img id="santaImage" src="../blog-images/santa-drinking-milk.jpeg" alt="Santa Claus drinking a glass of milk">
+        <h1>glug glug</h1>
+    </div>
+    
+            
+
+  </body>
+
+</html>
