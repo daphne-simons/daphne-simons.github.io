@@ -52,7 +52,6 @@ h2 {
 }
 
 h3 {
-  padding: 1em;
   text-align: center;
 }
 
@@ -900,10 +899,15 @@ border: solid black 2px;
   }
 }
 
- 
-
 .index-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.learning-plan-font {
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 3.5rem;
+  color: rgb(34, 0, 206);
+  text-align: center;
 }
